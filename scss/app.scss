@@ -41,3 +41,54 @@
 
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
+
+$nav-height: 64px;
+
+#nav-wrapper {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  display: block;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid;
+  border-color: $font-colour-dark;
+
+  nav {
+    display: inline-block;
+
+    ul {
+      display: inline;
+      float: right;
+
+      li {
+        display: inline;
+        margin-right: 24px;
+
+        a {
+          border-bottom: 0;
+          line-height: 100%;
+        }
+
+        .active {
+          font-weight: normal;
+        }
+      }
+    }
+
+  }
+}
+
+
+$section-padding: 24px;
+
+section {
+  padding: $section-padding 0 $section-padding 0;
+}
+
+section:first-of-type {
+  padding-top: $section-padding + $nav-height;
+}
+
