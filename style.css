@@ -3209,3 +3209,7 @@ form input[type=submit]:hover {
 .wspolpraca {
   text-align: center;
 }
+
+.wspolpraca a {
+  color: #0EB8E2;
+}
